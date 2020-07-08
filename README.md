@@ -16,7 +16,7 @@ Tech stack:
 * Room
 * MPAndroidChart
 
-![splashscreen]
+![splashscreen][start]
 ![start]
 ![add]
 ![chart]
