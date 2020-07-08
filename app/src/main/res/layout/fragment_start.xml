@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.edit.EditFragment"
+    android:background="@drawable/flowers">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="417dp"
+        android:layout_height="412dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:background="#DEE9F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="101dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1679C8"
+            android:text="Save"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="120dp"
+            android:ems="10"
+            android:fontFamily="@font/romanesco"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart"
+            android:textColor="#1679C8"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ageText"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:ems="10"
+            android:fontFamily="@font/romanesco"
+            android:hint="Age"
+            android:inputType="numberSigned|number"
+            android:textAlignment="viewStart"
+            android:textColor="#1679C8"
+            android:textColorHighlight="#FFFFFF"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+        <EditText
+            android:id="@+id/cycleLenText"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/romanesco"
+            android:hint="Cycle lenght"
+            android:inputType="numberSigned"
+            android:textColor="#1679C8"
+            android:textColorHighlight="#1679C8"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="@+id/ageText"
+            app:layout_constraintTop_toBottomOf="@+id/ageText" />
+
+        <EditText
+            android:id="@+id/periodLenText"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/romanesco"
+            android:hint="Period lenght"
+            android:inputType="numberSigned"
+            android:textColor="#1679C8"
+            android:textSize="35sp"
+            app:layout_constraintStart_toStartOf="@+id/cycleLenText"
+            app:layout_constraintTop_toBottomOf="@+id/cycleLenText" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="84dp"
+            android:fontFamily="@font/romanesco"
+            android:text="Today is"
+            android:textColor="#1679C8"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/periodLenText"
+            app:layout_constraintTop_toBottomOf="@+id/periodLenText" />
+
+        <EditText
+            android:id="@+id/cycleDayText"
+            android:layout_width="95dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:fontFamily="@font/romanesco"
+            android:hint="1"
+            android:inputType="numberSigned"
+            android:textAlignment="center"
+            android:textColor="#1679C8"
+            android:textSize="30sp"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:fontFamily="@font/romanesco"
+            android:text="th day of my cycle"
+            android:textColor="#1679C8"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cycleDayText"
+            app:layout_constraintTop_toTopOf="@+id/cycleDayText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#DEE9F3"
+        android:fontFamily="@font/romanesco"
+        android:text="Hello Stranger!"
+        android:textAlignment="center"
+        android:textColor="#1679C8"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

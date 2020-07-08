@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flowers"
+    tools:context=".ui.chart.ChartFragment">
+
+    <Spinner
+        android:id="@+id/chartMonth"
+        android:layout_width="409dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#DEE9F3"
+        android:backgroundTint="#DEE9F3"
+        android:entries="@array/months"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pregnancy"
+        android:layout_width="413dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="28dp"
+        android:background="#DEE9F3"
+        android:fontFamily="@font/romanesco"
+        android:text="Ciąża: "
+        android:textColor="#1679C8"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ferti"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="413dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:background="#DEE9F3"
+        android:fontFamily="@font/romanesco"
+        android:text=" Today: "
+        android:textColor="#1679C8"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chartMonth" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="414dp"
+        android:layout_height="351dp"
+        android:background="#DEE9F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/ferti"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#DEE9F3"
+        android:fontFamily="@font/romanesco"
+        android:text="TextView"
+        android:textColor="#1679C8"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

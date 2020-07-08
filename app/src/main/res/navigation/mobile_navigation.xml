@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="pl.kinga.myosotis.ui.chart.ChartFragment"
+        android:label="Chart"
+        tools:layout="@layout/fragment_chart" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="pl.kinga.myosotis.ui.addTemp.AddTempFragment"
+        android:label="Add"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="pl.kinga.myosotis.ui.edit.EditFragment"
+        android:label="Edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="pl.kinga.myosotis.ui.start.StartFragment"
+        android:label="AddFragment" >
+        <action
+            android:id="@+id/action_addFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpTo="@id/addFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="pl.kinga.myosotis.ui.splash.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_splashFragment_to_startFragment"
+            app:destination="@id/addFragment"
+            app:popUpTo="@id/addFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
