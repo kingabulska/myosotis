@@ -20,7 +20,7 @@ Tech stack:
 ![add] ![chart]
 ![toast] ![edit]
 
-[add]: https://github.com/kingabulska/myosotis/blob/master/img/add.PNG {:height="50%" width="50%"}
+[add]: https://github.com/kingabulska/myosotis/blob/master/img/add.PNG
 [edit]: https://github.com/kingabulska/myosotis/blob/master/img/edit.PNG
 [chart]: https://github.com/kingabulska/myosotis/blob/master/img/chart.PNG
 [start]: https://github.com/kingabulska/myosotis/blob/master/img/start.PNG
