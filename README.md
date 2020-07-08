@@ -16,12 +16,9 @@ Tech stack:
 * Room
 * MPAndroidChart
 
-![splashscreen][start]
-![start]
-![add]
-![chart]
-![toast]
-![edit]
+![splashscreen] ![start]
+![add] ![chart]
+![toast] ![edit]
 
 [add]: https://github.com/kingabulska/myosotis/blob/master/img/add.PNG
 [edit]: https://github.com/kingabulska/myosotis/blob/master/img/edit.PNG
